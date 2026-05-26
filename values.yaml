@@ -1,0 +1,31 @@
+community:
+  enabled: true
+
+
+edition: ""
+
+postgresql:
+  enabled: false
+
+jdbcOverwrite:
+  enable: true
+  jdbcUrl: jdbc:postgresql://sonar-postgres-postgresql.sonarqube.svc.cluster.local:5432/sonarqube
+  jdbcUsername: postgres
+  jdbcPassword: admin123
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 2Gi
+  limits:
+    cpu: 2
+    memory: 4Gi
+
+startupProbe:
+  initialDelaySeconds: 240
+  failureThreshold: 60
+
+monitoringPasscodeSecretName: sonarqube-secret
+monitoringPasscodeSecretKey: passcode
+
+monitoringPasscode: "admin123"
