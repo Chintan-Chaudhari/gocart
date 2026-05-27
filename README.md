@@ -21,6 +21,9 @@
 - [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 --------------------------------------------------------------------------------------------
+--------------------------------
+
+
 ## Features
 
 - **Multi-Vendor Architecture:** Allows multiple vendors to register, manage their own products, and sell on a single platform.
